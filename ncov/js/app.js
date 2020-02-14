@@ -219,7 +219,7 @@ var PageMain = {
     draw : {
         //数据处理 获取全国
         getChina : function(){
-            $.get('/webmap/virus/data/china.json',{},(data)=>{
+            $.get('data/china.json',{},(data)=>{
                 featuresVector = new ol.format.GeoJSON({featureProjection: 'EPSG:3857'}).readFeatures(data);
                 featuresVector.forEach((feature,index,arr)=>{
                     if(!metaData)return false;
