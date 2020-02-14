@@ -1,0 +1,99 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>新冠病毒疫情可视化</title>
+<link href="css/style.css"  rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js" charset="utf-8"></script>
+<script src="js/echarts.min.js" charset="utf-8"></script>
+<body>
+<div class="wpbox">
+<div class="bnt">
+  <div class="topbnt_left fl module">
+   <ul><li class="active"><a href="#">区域分布</a></li>
+      <li><a href="#">热力演变</a></li>
+      <li><a href="#">省市支援</a></li>
+      <li><a href="#">热点直播</a></li>
+   </ul>
+  </div>
+  <h1 class="tith1 fl">新冠病毒疫情可视化</h1>
+  <div class=" fr topbnt_right module">
+    <ul>
+       <li><a href="#">返回</a></li>
+       <li><a href="#">切换三维</a></li>
+       <li><a href="#">火神山模型</a></li>
+       <li><a href="#">雷神山模型</a></li>
+    </ul>
+   </ul>
+  </div>
+</div>
+<!-- bnt end -->
+<div class="left1">
+  <div class="aleftboxttop"><h2 class="tith2">今日疫情数据统计</h2>
+   
+    <!-- lefttoday_number end -->
+  </div>
+  <div class="aleftboxtmidd">
+      
+  </div>
+  <div class="aleftboxtbott">
+   
+</div>
+</div>
+<!--  left1 end -->
+<div class="mrbox">
+      <div class="mrbox_topmidd" style="width: 69%;">
+          <div class="amiddboxttop">
+              <h2 class="tith2 pt1">地图可视化</h2>
+                <div class="amiddboxttop_map" style="padding-top: 30px;">
+                  <iframe id="mapIframe" src="./map.html" height="100%" width="99%" scrolling="no" frameborder="no"></iframe>
+                </div>
+            </div>
+            <!--  amiddboxttop end-->
+            <div class="amidd_bott">
+                  <div class="pmrboxbottom"><h2 class="tith2 pt1">全国省份疫情对比</h2>
+                    <div id="pmrboxbottom" class="pmrboxbottomcont" ></div>
+                </div>
+            </div>
+            <!-- amidd_bott end -->
+          </div>
+        <!-- mrbox_top end -->
+        <div class="mrbox_top_right">
+          <div class="arightboxtop">
+           
+
+          </div>
+            <div class="arightboxbott"><h2 class="tith2 ">疫情趋势变化</h2>
+              <div class="lefttime_text">
+                  <ul>
+                    <li class="bg active" index='0'>全国新增</li>
+                    <li></li>
+                    <li class="bg" index='1'>疑似/确诊</li>
+                    <li></li>
+                    <li class="bg" index='2'>新增死/治</li>
+                    <li></li>
+                    <li class="bg" index='3'>死亡/治愈</li>
+                    <li></li>
+                    <li class="bg" index='4'>病死/治愈</li>
+                  </ul>
+               </div>
+              <div class="arightboxbottcont" style="">
+              </div>
+            </div>
+        </div>
+        <!-- mrbox_top_right end -->
+      </div>
+
+    </div>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <style>
+      .left2_table::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width : 10px;  /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+      }
+      .lefttime_text li:hover{
+        cursor: pointer;
+      }
+    </style>
+</div>
+</body>
+</html>
